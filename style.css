@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.header a {
+    float: right;
+    text-align: center;
+    padding: 14px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: darkgrey;
+    text-decoration: underline;
+}
+
+.search {
+    margin-left: 20%;
+    margin-top: 100px;
+}
+
+#bar {
+    width: 500px;
+}
+
+#logo {
+    padding-left: 120px;
+}
+
+input[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow: darkgrey;
+    border-radius: 25px;
+    border-width: 3px;
+    opacity: 10%;
+}
