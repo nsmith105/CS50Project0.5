@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Advanced Search</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
-        <div class="header">
+        <div class="header" style="background-color: #f1f1f1;">
             <a href="index.html">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo2"
                      style="height: 20px;">
@@ -13,18 +14,62 @@
             <a href="image.html">Images</a>
             <a href="advanced.html">Advanced</a>
         </div>
-        <div class="search">
-            <a href="index.html">
-                <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
-            </a>
-            <br>
-            <br>
-            <form method="get" action="#" onsubmit="runsearch(this);return false;">
-                <input id="bar" type="text" name="q" size="25" maxlength="255" value=""/>
-                <br>
-                <input id="buttons" type="submit" value="Google Search">
+        <div class="app-bar">
+            <label style="margin-left: 10px;">Advanced Search</label>
+        </div>
+        <div style="border-bottom: 1px solid #ebebeb"></div>
+        <div class="container" style="padding-top: 30px;">
+            <form action="http://www.google.com/search" method="GET" name="f"></form>
+                <div class="row">
+                    <div class="col-3" style="font-size: 16px; font-weight: 500; vertical-align: middle;">
+                        Find pages with...
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-3" style="font-size: 13px; font-weight:700; vertical-align: middle;">
+                        To do this in the search box
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" id="query">
+                        all these words:
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3" id="detail">
+                        Type the important words: <span id="example"> Doggo doin me a laff</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" id="query">
+                        this exact word or phrase:
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3" id="detail">
+                        Put exact words in quotes: <span id="example"> "Doggo doin me a laff"</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" id="query">
+                        any of these words:
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3" id="detail">
+                        Type OR between all te words you want: <span id="example"> big OR little</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" id="query">
+                        none of these words:
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3" id="detail">
+                        Put a minus sign just before words you don't want: <span id="example"> -doggo, -"Doggo doin"</span>
+                    </div>
+                </div>
             </form>
         </div>
-
     </body>
 </html>

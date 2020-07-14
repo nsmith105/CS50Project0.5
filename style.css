@@ -1,5 +1,10 @@
 body {
     font-family: sans-serif;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
 }
 
 .header {
@@ -66,4 +71,29 @@ input[type=text]{
     white-space: nowrap;
     position: relative;
     top: -20px;
+}
+
+.app-bar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.row > div {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+#query {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#detail {
+    font-size: 11px;
+}
+
+#example {
+    font-family: monospace;
+    font-size: 11px;
 }
