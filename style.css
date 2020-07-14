@@ -80,13 +80,12 @@ input[type=text]{
 }
 
 .row > div {
-    padding: 20px;
+    padding: 5px;
     vertical-align: middle;
 }
 
 #query {
     font-size: 13px;
-    line-height: 16px;
 }
 
 #detail {
@@ -96,4 +95,32 @@ input[type=text]{
 #example {
     font-family: monospace;
     font-size: 11px;
+}
+
+.adv {
+    width: 100%;
+    border-radius: 0 !important;
+    vertical-align: 0px !important;
+    margin: 0px !important;
+    height: 30px !important;
+}
+
+.adv-button {
+    user-select: none;
+    line-height: 100%;
+    float: right;
+    height: 30px;
+    min-width: 120px;
+    margin: 10px 0;
+    padding: 0 12px;
+    box-shadow: none;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    
 }
