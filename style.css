@@ -21,7 +21,7 @@ body {
 }
 
 .search {
-    margin-left: 20%;
+    margin-left: 30%;
     margin-top: 100px;
 }
 
@@ -37,8 +37,33 @@ input[type=text]{
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    box-shadow: darkgrey;
     border-radius: 25px;
-    border-width: 3px;
-    opacity: 10%;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: double;
+    outline: none;
+}
+#buttons {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.logo-subtext {
+    color: #4285f5;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    left: 345px;
+    white-space: nowrap;
+    position: relative;
+    top: -20px;
 }
